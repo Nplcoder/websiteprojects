@@ -4,7 +4,7 @@ import bagImage from "../../../image/ecology-bag-with-leaves.png"; // fix your p
 
 const Banner = () => {
   return (
-    <div className="relative w-full mb-12">
+    <div className="relative w-full mb-2">
       {/* Banner Section */}
       <div className="relative h-[250px] md:h-[300px] w-full overflow-hidden">
         {/* Background Video */}
@@ -27,7 +27,7 @@ const Banner = () => {
           {/* Left Side */}
           <div className="max-w-xl space-y-4">
             <h1 className="text-3xl md:text-5xl font-bold text-green-900">
-              Eco-Friendly Paper Bags
+              Eco-Friendly Paper Bags for Your Business
             </h1>
             <p className="text-gray-700 text-sm md:text-base">
               Custom-made for your brand with sustainability in mind.
@@ -66,20 +66,26 @@ const Banner = () => {
       </div>
 
       {/* Floating Feature Card */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-40px] w-[90%] max-w-4xl bg-white rounded-2xl shadow-lg z-20 flex flex-col sm:flex-row justify-between items-center py-4 px-6 gap-4 sm:gap-0 text-sm">
-        <div className="flex items-center gap-2 border-r pr-4">
-          <span className="text-green-500 text-xl">✔️</span>
-          <p>Trusted by Brands</p>
-        </div>
-        <div className="flex items-center gap-2 border-r px-4">
-          <span className="text-pink-500 text-xl">🎨</span>
-          <p>Custom Printing</p>
-        </div>
-        <div className="flex items-center gap-2 pl-4">
-          <span className="text-green-500 text-xl">🚚</span>
-          <p>Fast Delivery</p>
-        </div>
-      </div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-20px] w-[70%] sm:w-[70%] md:w-[45%] max-w-3xl bg-white rounded-xl shadow-md z-20 flex flex-row justify-between items-center py-2 px-4 sm:px-3 text-[8px] sm:text-sm">
+  {/* Trusted by Brands */}
+  <div className="flex items-center gap-1 sm:gap-2 border-r pr-3 sm:pr-4">
+    <span className="text-green-500 text-lg">✔️</span>
+    <p>Trusted by Brands</p>
+  </div>
+
+  {/* Custom Printing */}
+  <div className="flex items-center gap-1 sm:gap-2 border-r px-3 sm:px-4">
+    <span className="text-pink-500 text-lg">🎨</span>
+    <p>Custom Printing</p>
+  </div>
+
+  {/* Fast Delivery */}
+  <div className="flex items-center gap-1 sm:gap-2 pl-3 sm:pl-4">
+    <span className="text-green-500 text-lg">🚚</span>
+    <p>Fast Delivery</p>
+  </div>
+</div>
+
     </div>
   );
 };
